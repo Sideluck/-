@@ -6,10 +6,10 @@ public:
 	BaseScene() {};
 	~BaseScene() {};
 
-	void Init();
-	void Update();
-	void Draw();
-	void Release();
+	virtual void Init();
+	virtual void Update();
+	virtual void Draw();
+	virtual void Release();
 
 private:
 

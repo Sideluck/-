@@ -2,6 +2,7 @@
 
 #include "Scene/TitleScene/TitleScene.h"
 #include "Scene/GameScene/GameScene.h"
+#include "Scene/BaseScene/BaseScene.h"
 
 // ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// /////
 // エントリーポイント
@@ -68,6 +69,15 @@ void Application::PreUpdate()
 void Application::Update()
 {
 	//m_nowScene->Update();
+	if (GetAsyncKeyState(VK_RETURN) & 0x8000)
+	{
+		m_nowScene = std::make_shared<GameScene>();
+	}
+	if (GetAsyncKeyState('T') & 0x8000)
+	{
+		m_nowScene = std::make_shared<TitleScene>();
+	}
+
 	m_nowScene->Update();
 }
 
@@ -162,7 +172,8 @@ void Application::DrawSprite()
 	// 2Dの描画はこの間で行う
 	KdShaderManager::Instance().m_spriteShader.Begin();
 	{
-		//m_nowScene->Draw();
+		//ポリモーフィズム(多態性)
+		//同じ関数で、オブジェクトごとに異なる動作をすること
 		m_nowScene->Draw();
 	}
 	KdShaderManager::Instance().m_spriteShader.End();
@@ -232,8 +243,8 @@ bool Application::Init(int w, int h)
 	//m_nowScene = new TitleScene();
 	//m_nowScene->Init();
 	//m_nowScene = std::make_shared<TitleScene>();
-	m_nowScene = std::make_shared<GameScene>();
-
+	m_nowScene = std::make_shared<TitleScene>();
+	//								↑TitleSceneの領域を作成
 	return true;
 }
 

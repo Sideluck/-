@@ -1,17 +1,19 @@
 ﻿#pragma once
 
-class GameScene
+#include "../BaseScene/BaseScene.h" 
+
+class GameScene:public BaseScene
 {
 public:
 	GameScene() { Init(); };
 	~GameScene() { Release(); };
 
-	void Update();
-	void Draw();
+	void Update()override;
+	void Draw()override;
 
 private:
-	void Init();
-	void Release();
+	void Init()override;
+	void Release()override;
 
 	KdTexture m_playerTex;
 };

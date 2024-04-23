@@ -1,7 +1,6 @@
 ﻿#pragma once
 
-class TitleScene;
-class GameScene;
+class BaseScene;
 
 //============================================================
 // アプリケーションクラス
@@ -60,7 +59,7 @@ private:
 	//生ポインタ
 	//TitleScene* m_nowScene;
 	//スマートポインター
-	std::shared_ptr<GameScene> m_nowScene;
+	std::shared_ptr<BaseScene> m_nowScene;
 	//何も入っていない状態
 
 //=====================================================
