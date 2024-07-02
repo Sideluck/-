@@ -42,6 +42,7 @@ void CameraBase::UpdateRotateByMouse()
 	_mouseMove.x = _nowPos.x - m_FixMousePos.x;
 	_mouseMove.y = _nowPos.y - m_FixMousePos.y;
 
+	//固定してる奴
 	SetCursorPos(m_FixMousePos.x, m_FixMousePos.y);
 
 	// 実際にカメラを回転させる処理(0.15はただの補正値)

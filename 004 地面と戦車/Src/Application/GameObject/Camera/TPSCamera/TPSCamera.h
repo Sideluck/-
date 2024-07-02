@@ -4,9 +4,12 @@
 class TPSCamera : public CameraBase
 {
 public:
-	TPSCamera()							{}
-	~TPSCamera()			override	{}
+	TPSCamera()			  {}
+	~TPSCamera() override {}
 
 	void Init()				override;
 	void Update()			override;
+private:
+
+	bool m_hold = false;
 };

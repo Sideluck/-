@@ -76,11 +76,20 @@
     <Filter Include="Src\Application\GameObject\Camera">
       <UniqueIdentifier>{781882e7-a4ba-44ae-b14e-75844a3802df}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Src\Application\GameObject\Camera\FPSCamera">
-      <UniqueIdentifier>{cab66d5f-b9d3-40bd-ae9d-57120eb6c79c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Src\Application\GameObject\Camera\TPSCamera">
       <UniqueIdentifier>{c8cf7720-4d00-4c0b-a1cf-bc64280b295f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\GameObject\Characters">
+      <UniqueIdentifier>{fad07844-36ed-4c32-b9ad-a3f636e9c73f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\GameObject\Grounds">
+      <UniqueIdentifier>{60a3750f-6d71-4fc6-b26e-73eb4ad21d3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\GameObject\Characters\Tank">
+      <UniqueIdentifier>{c1253b2e-d901-402a-814f-8b740327019f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\GameObject\Grounds\Ground">
+      <UniqueIdentifier>{bba13e7d-f81b-4290-9928-0c42b25cb251}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -255,8 +264,11 @@
     <ClInclude Include="Src\Application\GameObject\Camera\TPSCamera\TPSCamera.h">
       <Filter>Src\Application\GameObject\Camera\TPSCamera</Filter>
     </ClInclude>
-    <ClInclude Include="Src\Application\GameObject\Camera\FPSCamera\FPSCamera.h">
-      <Filter>Src\Application\GameObject\Camera\FPSCamera</Filter>
+    <ClInclude Include="Src\Application\GameObject\Characters\Tank\Tank.h">
+      <Filter>Src\Application\GameObject\Characters\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\GameObject\Grounds\Ground\Ground.h">
+      <Filter>Src\Application\GameObject\Grounds\Ground</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -404,8 +416,11 @@
     <ClCompile Include="Src\Application\GameObject\Camera\TPSCamera\TPSCamera.cpp">
       <Filter>Src\Application\GameObject\Camera\TPSCamera</Filter>
     </ClCompile>
-    <ClCompile Include="Src\Application\GameObject\Camera\FPSCamera\FPSCamera.cpp">
-      <Filter>Src\Application\GameObject\Camera\FPSCamera</Filter>
+    <ClCompile Include="Src\Application\GameObject\Characters\Tank\Tank.cpp">
+      <Filter>Src\Application\GameObject\Characters\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\GameObject\Grounds\Ground\Ground.cpp">
+      <Filter>Src\Application\GameObject\Grounds\Ground</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
